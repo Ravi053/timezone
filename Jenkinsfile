@@ -3,7 +3,9 @@ pipeline {
     stages {
       stage('timezone') {
             steps {
+              sh ***
                  timedatectl
+              ***
             }
         }
     }
