@@ -1,11 +1,12 @@
 pipeline {
   agent any
     stages {
-      timedatectl
+      timedatectl {
         stage('timezone') { 
             steps {
                 echo "This is build stage"
             }
         }
     }
+}
 }
