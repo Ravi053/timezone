@@ -1,9 +1,11 @@
 pipeline {
   agent any
     stages {
-        stage('timezone') 
+      stage('timezone') {
             steps {
-                 timedatectl {
+              sh ***
+                 timedatectl
+              ***
             }
         }
     }
